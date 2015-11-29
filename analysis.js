@@ -2,7 +2,7 @@ var analysis = (function(){
 
     var module = {};
 
-    var fruits = [apple, orange, pear, peach, pineapple];
+    var fruits = ["apple", "orange", "pear", "peach", "pineapple"];
 
     function addFruit(){
 
