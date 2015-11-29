@@ -16,6 +16,7 @@ var analysis = (function(){
     //METHODS
 
     module.addFruit = function(){
+        console.log("mission accomplished.\n");
 
         addFruit();
         return;
