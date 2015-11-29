@@ -32,6 +32,7 @@ var analysis = (function(){
         var fruitList = document.getElementById("fruits");
         fruitList.onkeyup = function(){
             console.log(fruitList.innerHTML);
+            console.log("\n");
         }
 
     };
