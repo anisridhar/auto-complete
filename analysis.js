@@ -29,7 +29,7 @@ var analysis = (function(){
 
     module.printInfo = function(){
 
-        var fruitList = document.getElementbyId("fruits");
+        var fruitList = document.getElementById("fruits");
         fruitList.onkeyup = function(){
             console.log(fruitList.innerHTML);
         }
