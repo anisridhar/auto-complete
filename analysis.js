@@ -27,6 +27,17 @@ var analysis = (function(){
 
     };
 
+    module.printInfo = function(){
+
+        var fruitList = document.getElementbyId("fruits");
+        fruitList.onkeyup = function(){
+            console.log(fruitList.innerHTML);
+        }
+
+    };
+
+    module.printInfo();
+
     return module;
 
 }());
