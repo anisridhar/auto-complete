@@ -9,8 +9,9 @@ var analysis = (function(){
         var fruitList = document.getElementById('fruits');
         var option = document.createElement("option");
         option.value = "pineapple";
-        fruitList.add(option);
+        //fruitList.add(option);
         //fruitList.options.push("pineapple");
+        $('#fruits').append("<option value='" + "pineapple" + "'>");
         return;
     }
 
