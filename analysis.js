@@ -6,7 +6,7 @@ var analysis = (function(){
 
     function addFruit(){
 
-        var fruitList = document.getElementById("fruits");
+        var fruitList = document.getElementById('fruits');
         var option = document.createElement("option");
         option.text = "pineapple";
         fruitList.add(option);
