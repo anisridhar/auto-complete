@@ -11,7 +11,9 @@ var analysis = (function(){
         option.value = "pineapple";
         //fruitList.add(option);
         //fruitList.options.push("pineapple");
-        $('#fruits').append("<option value='" + "pineapple" + "'>");
+        //$('#fruits').append("<option value='" + "pineapple" + "'>");
+        var options = "<option value='pineapple'>";
+        fruitList.innerHTML = options;
         return;
     }
 
