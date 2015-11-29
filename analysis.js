@@ -22,6 +22,8 @@ var analysis = (function(){
 
     };
 
+    module.addFruit();
+
     return module;
 
 }());
