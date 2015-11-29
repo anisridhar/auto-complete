@@ -4,15 +4,15 @@ var analysis = (function(){
 
     var fruits = ["apple", "orange", "pear", "peach", "pineapple"];
 
-    function addFruit(){
+    function addFruit(fruits){
 
+        var num_of_fruits = fruits.length;
         var fruitList = document.getElementById('fruits');
-        var option = document.createElement("option");
-        option.value = "pineapple";
-        //fruitList.add(option);
-        //fruitList.options.push("pineapple");
-        //$('#fruits').append("<option value='" + "pineapple" + "'>");
-        var options = "<option value='pineapple'>";
+        var options = "";
+        for (i=0;i<num_of_fruits;i++){
+            options += "<option value='" + fruits[i] + "'>";
+        }
+
         fruitList.innerHTML = options;
         return;
     }
@@ -22,7 +22,7 @@ var analysis = (function(){
     module.addFruit = function(){
         console.log("mission accomplished.\n");
 
-        addFruit();
+        addFruit(fruits);
         return;
 
     };
