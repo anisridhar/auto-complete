@@ -3,6 +3,7 @@ var analysis = (function(){
     var module = {};
 
     var fruits = ["apple", "orange", "pear", "peach", "pineapple"];
+    //can add as many fruits to this list as desired
 
     function addFruit(fruits){
 
@@ -15,6 +16,19 @@ var analysis = (function(){
 
         fruitList.innerHTML = options;
         return;
+    }
+
+    function getPossibleFruits(substring){
+
+        var n = fruits.length;
+        var newFruits = []; // list of fruits matching the substring
+        for (i=0;i<n;i++){
+            if (fruits[i].indexOf(substring) != -1){
+                newFruits.push(fruits[i]);
+            }
+        }
+        return newFruits;
+
     }
 
     //METHODS
